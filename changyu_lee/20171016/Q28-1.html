@@ -1,0 +1,30 @@
+<!-- another case  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CheckOfSum</title>
+</head>
+<body>
+    <p>더하기 결과 확인</p>
+    <div>
+        <input type="text" name="a" class="input1"> +
+        <input type="text" name="b" class="input2"> =
+        <input type="text" name="result" class="result">
+    </div>
+    <input type="button" value="확인" id ="check">
+    <script>
+        // Using id , class
+        var x = document.getElementsByClassName('input1')[0];
+        var y = document.getElementsByClassName('input2')[0];
+        var result = document.getElementsByClassName('result')[0];
+
+        var check = document.getElementById('check');
+        check.addEventListener('click', function () {
+            alert((x.value * 1 + y.value * 1 === result.value * 1) ? '정답입니다!' : '오답입니다!');
+        });
+    </script>
+</body>
+</html>

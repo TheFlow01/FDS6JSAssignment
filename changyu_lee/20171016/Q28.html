@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CheckOfSum</title>
+</head>
+
+<body>
+    <p>더하기 결과 확인</p>
+    <div>
+        <input type="text" name="a"> +
+        <input type="text" name="b"> =
+        <input type="text" name="result">
+    </div>
+    <input type="button" value="확인">
+    <script>
+        var a = document.querySelector('input[name=a]')
+        var b = document.querySelector('input[name=b]')
+        var result = document.querySelector('input[name=result]')
+
+        var check = document.querySelector('input[type=button]');
+        check.addEventListener('click', function () {
+            alert((a.value * 1 + b.value * 1 === result.value * 1) ? '정답입니다!' : '오답입니다!');
+        });
+    </script>
+</body>
+
+</html>
