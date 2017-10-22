@@ -1,7 +1,6 @@
 var fibonacci = function(n) {
-    var arr = [];
-    arr[0] = 0;
-    arr[1] = 1;
+    var arr = [0,1];
+    
     for (var i = 2; i<=n; i++) {
         arr.push(arr[i-1] + arr[i-2]);
     }

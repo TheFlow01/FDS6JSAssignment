@@ -1,7 +1,7 @@
 function getDayName(a, b) {
-  var daysName = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
+  var dayNames = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
   var day = new Date(2016, a - 1, b);
-  var result = daysName[day.getDay()];
+  var result = dayNames[day.getDay()];
   return result;
 }
 
